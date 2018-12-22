@@ -1,0 +1,6 @@
+./dockerize-vxm/psql/alldump.sql
+./dockerize-vxm/psql/pg_hba.conf
+./dockerize-vxm/tomcat/ssl
+./dockerize-vxm/tomcat/trust
+./dockerize-vxm/tomcat/password.key
+./dockerize-vxm/tomcat/runtime.properties
