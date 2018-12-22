@@ -1,4 +1,4 @@
-#dockerize your local vxm
+##dockerize your local vxm
 This environment could save your time from building your code to installing on the remote vxm.
 The script localize_vxm.sh back up your entire database copy some ssl file and apply git patch on your dev to prepare for the dockerization.
 Just run `source localize_vxm.sh` and follow the guide step by step, enter the vxm ip address, password and workspace path(or use the default).

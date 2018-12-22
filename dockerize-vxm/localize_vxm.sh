@@ -34,7 +34,7 @@ fi
 
 echo "copy pg_nba.conf from dev code..."
 pg_hba="/application/mystic.manager/mystic.manager.commons/mystic.manager.commons.db/src/main/resources/conf/pg_hba.conf"
-cp $path$pg_hba $OLDPWD/psql
+cp $path$pg_hba ./psql
 
 echo "apple git patch to dev code..."
 sudo cp ./patch/localize-vxm.patch ./patch/dockerize-local-vxm.patch $path
