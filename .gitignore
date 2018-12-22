@@ -4,3 +4,4 @@ dockerize-vxm/tomcat/ssl
 dockerize-vxm/tomcat/trust
 dockerize-vxm/tomcat/password.key
 dockerize-vxm/tomcat/runtime.properties
+dockerize-vxm/.git
