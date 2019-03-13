@@ -1,0 +1,7 @@
+psql/alldump.sql
+psql/alldump.sql.bak
+tomcat/ssl
+tomcat/trust
+tomcat/password.key
+tomcat/runtime.properties
+tomcat/config.json
