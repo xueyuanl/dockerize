@@ -1,9 +1,9 @@
 # Transmission-cli
-docker container for transmission-cli based on alpine.
+docker container for transmission-cli based on ubuntu.
 ## Usage
 ```sh
 docker build -t transmission-cli .
-docker run --rm -v <download-path>:/download transmission-cli [options] <file|url|magnet>
+docker run --rm -v <download-path>:/download transmission-cli [options|-w /download] <file|url|magnet>
 ```
 ## Help
 ```sh
