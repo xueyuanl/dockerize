@@ -25,3 +25,12 @@ linux user,
 ```
 DISPLAY=unix$DISPLAY
 ```
+
+if sometimes you get this error:
+```
+No protocol specified
+Unable to init server: Broadway display type not supported: 192.168.2.34:0
+Error: cannot open display: 192.168.2.34:0
+```
+
+you just execute `xhost +` on your mac, them run GUI program on your remote ssh server.
