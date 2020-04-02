@@ -1,4 +1,4 @@
 #!/bin/sh
 
 tinyproxy
-openconnect vpn-chn.emc.com
+openconnect $1

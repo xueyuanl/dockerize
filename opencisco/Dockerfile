@@ -15,3 +15,4 @@ EXPOSE 8888
 
 ENTRYPOINT ["./entrypoint.sh"]
 
+CMD ["vpn-chn.emc.com"]
