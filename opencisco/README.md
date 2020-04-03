@@ -18,3 +18,18 @@ docker run --rm -it --privileged -p 8888:8888 opencisco:0.1 vpn-isr.emc.com # Is
 docker run --rm -it --privileged -p 8888:8888 opencisco:0.1 vpn-usa-south.emc.com # USA-South
 docker run --rm -it --privileged -p 8888:8888 opencisco:0.1 vpn-egy.emc.com # Egypt
 ```
+
+for ssh over http proxy
+```
+ssh user@<taregt-ip> -o "ProxyCommand=nc -X connect -x <proxy-ip>:<proxy-port> %h %p"
+```
+meet "Write Failed: broken pipe"
+You could set either `ServerAliveInterval` in `/etc/ssh/ssh_config` of the client machine or `ClientAliveInterval` in `/etc/ssh/sshd_config` of the server machine. Try reducing the interval if you are still getting the error.
+```
+# on client
+Host *
+ServerAliveInterval 120
+# on server
+ClientAliveInterval 120
+```
+Configuration for a single user can be set in file `~/.ssh/config` both on the server and client side. Make sure the file has correct permissions chmod 644 `~/.ssh/config`.
