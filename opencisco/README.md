@@ -5,6 +5,10 @@ docker build -t opencisco:0.1 .
 
 # default is China-Unicom
 docker run --rm -it --privileged -p 8888:8888 opencisco:0.1
+
+# with remote desktop
+docker run --rm -it --privileged --env RDP_HOST=<hostname or ip> -p 8888:8888 -p 3389:3389 opencisco:0.1
+
 ```
 or use a specific vpn server
 ```
