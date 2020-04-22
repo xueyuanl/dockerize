@@ -23,6 +23,12 @@ docker run --rm -it --privileged -p 8888:8888 opencisco:0.1 vpn-usa-south.emc.co
 docker run --rm -it --privileged -p 8888:8888 opencisco:0.1 vpn-egy.emc.com # Egypt
 ```
 
+for scp over http proxy
+```
+scp -o "ProxyCommand=nc -X connect -x 127.0.0.1:8888 %h %p" -P 22222 README.md mystic@10.124.95.14:/home/mystic
+```
+if get `nc: invalid option -- X` refer https://stackoverflow.com/a/23616021/32453
+
 for ssh over http proxy
 ```
 ssh user@<taregt-ip> -o "ProxyCommand=nc -X connect -x <proxy-ip>:<proxy-port> %h %p"
